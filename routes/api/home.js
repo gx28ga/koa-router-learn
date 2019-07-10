@@ -19,7 +19,7 @@ router.get("/slides", async (ctx) => {
   
   router.get("/hot", async (ctx) =>{
       const readAsync=util.promisify(fs.readFile);
-      ctx.body=await readAsync("./static/book.json",{encoding:"utf8"}); 
+      ctx.body=await readAsync("./static/books.json",{encoding:"utf8"}); 
       
       
   })
